@@ -1,4 +1,4 @@
 class PageController < ApplicationController
-  def home
+  def Movies
   end
 end

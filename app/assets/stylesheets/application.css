@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ .list-cover {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.movie-item {
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.movie-poster {
+  width: 120px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}

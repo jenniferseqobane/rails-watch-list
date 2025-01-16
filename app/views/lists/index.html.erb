@@ -1,0 +1,30 @@
+<h1>Lists</h1>
+<div class="row">
+  <% @lists.each do |list| %>
+    <div class="col-md-4">
+      <div class="card">
+        <%= image_tag list.image.variant(resize_to_limit: [300, 300]), class: "card-img-top" if list.image.attached? %>
+        <div class="card-body">
+          <h5 class="card-title"><%= list.title %></h5>
+          <p class="card-text"><%= list.description %></p>
+          <%= link_to 'Show', list_path(list), class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<h1>Lists</h1>
+<div class="row">
+  <% @lists.each do |list| %>
+    <div class="col-md-4">
+      <div class="card">
+        <%= image_tag list.image.variant(resize_to_limit: [300, 300]), class: "card-img-top" if list.image.attached? %>
+        <div class="card-body">
+          <h5 class="card-title"><%= list.title %></h5>
+          <p class="card-text"><%= list.description %></p>
+          <%= link_to 'Show', list_path(list), class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
